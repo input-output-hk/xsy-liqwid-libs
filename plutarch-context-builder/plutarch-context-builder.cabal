@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               plutarch-context-builder
-version:            3.0.0
+version:            3.0.1
 synopsis:           A builder for ScriptContexts
 description:
   Defines a builder for ScriptContexts, with helpers for commonly-needed uses.
@@ -105,6 +105,7 @@ library
     Plutarch.Context.Rewarding
     Plutarch.Context.Spending
     Plutarch.Context.SubBuilder
+    Plutarch.Context.Transformer
     Plutarch.Context.TxInfo
 
   build-depends:
@@ -117,6 +118,7 @@ library
     , plutus-ledger-api
     , plutus-tx
     , prettyprinter
+    , profunctors
 
   hs-source-dirs:  src
 
